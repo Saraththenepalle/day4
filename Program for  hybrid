@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+class A
+{
+ 	public:
+ 	int x;
+};
+class B : public A
+{
+ 	public:
+ 	B()      
+ 	{
+ 	   cout<<"enter the value of x :";
+ 	   cin >> x;
+ 	}
+};
+class C
+ {
+ 	public:
+ 	int y;
+ 	C()  
+ 	{
+ 	    cout<<"enter the value of y :";
+ 	    cin >>y;
+        }
+};
+class D : public B, public C   
+{
+ 	public:
+ 	void sum()
+ 	{
+ 	    cout << "hybrid inheritance of addition of two numbers is = " << x + y;
+ 	}
+};
+
+int main()
+{
+         D obj1;          
+ 	obj1.sum();
+ 	return 0;
+}
