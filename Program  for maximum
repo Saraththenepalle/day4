@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float n1, n2, n3;
+
+    cout << "Enter the  numbers:Number 1:";
+    cin >> n1;
+    cout << "Enter the numbers:Number 2:";
+    cin >> n2;
+    cout << "Enter the numbers:Number 3:";
+    cin >> n3;
+
+    if((n1 >= n2) && (n1 >= n3))
+        cout << "Largest number: " << n1;
+    else if ((n2 >= n1) && (n2 >= n3))
+        cout << "Largest number: " << n2;
+    else
+        cout << "Largest number: " << n3;
+    
+    return 0;
+}
